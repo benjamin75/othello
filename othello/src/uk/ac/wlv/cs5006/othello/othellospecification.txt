@@ -1,0 +1,73 @@
+5CS006 Software Engineering Practices
+*************************************
+
+Othello Assessment
+******************
+
+Individualised Specification
+----------------------------
+
+Classes you must write
+----------------------
+
+ItemTest
+GridLocationTest
+GridCellTest
+GridTest
+ControllerTest
+OthelloModelTest
+
+Detailed specification for each class
+*************************************
+
+TEST ONLY PUBLIC METHODS.
+
+In general you should use the getters and setters to perform your tests, in conjunction with the JUnit methods.
+You will need to create objects so that you can test that the classes work.
+For example, you need to create a Grid to test the Grid class.
+
+ItemTest:
+
+- test the constructor with both "WHITE" and "BLACK".
+- test that the Item value can be set and 'got' correctly.
+- test that equals() works correctly.
+
+GridLocationTest:
+
+- test that the default constructor works and that it sets the location to an invalid location.
+- test that the parameterised constructor works with a variety of values.
+- test that setInvalid() sets a location to an invalid value.
+- test all of the other getters and setters.
+
+
+GridCellTest:
+
+- test the constructor with both "WHITE" and "BLACK" and different locations.
+- test all of the getters and setters.
+
+GridTest:
+
+- test the Grid constructor. Ensure, using the getters and setters, that the Grid has the dimensions you used and that it was cleared.
+- test all of the getters and setters.
+- test the clear() method.
+- test the isOnGrid() method.
+- test the gridIsFull() method.
+- test the gridHasSingleValue() method.
+
+ControllerTest:
+
+- test the attemptPlay() method with valid and invalid plays.
+- test the getOpponent() method with both Item values.
+- test the getWinner() method.
+
+OthelloModelTest:
+
+There is a problem in the OthelloModel class. It allows illegal plays. See if you can find the problem with your testing and then fix it.
+
+- test the setInitialState() method.
+- test the getters and setters.
+- test the attemptPlay() method with valid and invalid plays. Test parts of the Grid where the player cannot legally play.
+- test the gridIsFull() method.
+- test the gridHasSingleValue() method.
+- test the getOpponent() method with both Item values.
+- test the getWinner() method.
