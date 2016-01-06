@@ -6,33 +6,43 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import uk.ac.wlv.cs5006.othello.GridLocation;
+
 public class GridLocationTest {
 
 	
 
 	@Test
 	public void testGridLocation() {
-	
+	GridLocation jg = new GridLocation (1,1);
+	assertTrue (jg.getRow() ==1);
+	assertTrue(jg.getCol() ==1);
 	}
 
 	@Test
-	public void testGridLocationIntInt() {
-		
+	public void setrow() {
+		GridLocation swe = new Grid
 	}
 
 	@Test
-	public void testSetInvalid() {
+	public void testSetInvalid3() {
+		GridLocation df = new GridLocation (-1,-1);
+		df.setInvalid();
+		assertTrue(df.isInvalid());
+		GridLocation tlc = new GridLocation (1,1);
 		
 	}
 
 	@Test
 	public void testIsInvalid() {
-		fail("Not yet implemented");
+		GridLocation df = new GridLocation ();
+		df.setInvalid();
+		assertTrue(df.isInvalid());
 	}
 
 	@Test
-	public void testGetRow() {
-		
+	public void invalidrow2() {
+		GridLocation  = new GridLocation ();
 	}
 
 	@Test
