@@ -36,6 +36,7 @@ public class OthelloModel extends AbstractModel
 	 */
 	public Item getItem(int row, int col)
 	{
+		
 		return grid.getItem(row, col);
 	}
 
